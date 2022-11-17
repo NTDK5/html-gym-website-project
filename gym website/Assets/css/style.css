@@ -1,0 +1,372 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    }
+li{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    color: #C90000;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:transparent;
+    z-index: 100;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(270deg, rgba(9, 9, 9, 0.395) -15.59%, rgba(0, 0, 0, 0.5) 100%), url('../heroimage.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.logo{
+    margin-left: 200px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+h1> span{
+    color: #C90000;
+}
+.nav_link{
+    margin-right: 200px;
+}
+.nav_link > ul{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding: 0 30px;
+}
+li>a{
+    color: white;
+    font-size: 20px;
+}
+.active{
+    color: #C90000;
+}
+a:hover{
+    color: #C90000;
+}
+
+.home> h1{
+    color: #C90000;
+    font-size: 30px;
+}
+.home >h2{
+    color: white;
+    font-size: 80px;
+}
+.join{
+    margin-top: 10px;
+    padding: 20px 40px;
+    background-color: transparent;
+    color: #C90000;
+    font-size: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.join:hover{
+    background-color: #C90000;
+    color: white;
+}
+.card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translatey(-50%);
+}
+ .card-1, .card-2{
+    width: 20%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    justify-content: center;
+    gap: 20px;
+}
+.card-1{
+    background-color: #C90000;
+}
+.card-2{
+    background-color:#241610;
+}
+
+.card-1 > h1, .card-2 > h1{
+    font-size: 35px;
+    color: white;
+}
+.card-1 > p, .card-2 > p{
+    color: white;
+    font-size: 22px;
+} 
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.aboutimg{
+    width: 30%;
+    height: 500px;
+    border: 1px solid red;
+    background-image: url("../image7.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.abouttext{
+    width: 40%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.abouttext >h1{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #424242;
+    text-transform: capitalize;
+}
+.abouttext > h3{
+    font-size: 22px;
+    color: #424242;
+    font-weight: 500;
+}
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+.table_1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    color: #424242;
+    gap: 20px;
+}
+.table_1 > h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.table_1 > p{
+    font-size: 20px;
+    width: 80%;
+} 
+.feature{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.featuretext{
+    margin-bottom: 200px;
+    text-align: center;
+}
+.featuretext > h2{
+    color: #C90000;
+    font-size: 25px;
+    font-weight: bold;
+}
+.featuretext>h1{
+    font-size: 40px;
+    color: #424242;
+    font-weight: bold;
+}
+.container{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 150px;
+}
+.box{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.box1{
+    background-image: linear-gradient(180deg, #010101 0%, rgba(0, 0, 0, 0.51) 70%), url("../image6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box >h1{
+    font-size: 25px;
+    color: #E1E1E1;
+}
+.box >p{
+    width: 80%;
+    font-size: 18px;
+    color: #E1E1E1;
+}
+.box2{
+    background-image: linear-gradient(180deg, #010101 0%, rgba(0, 0, 0, 0.51) 80%), url("../image5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box3{
+    background-image: linear-gradient(180deg, #010101 0%, rgba(0, 0, 0, 0.51) 80%), url("../image 4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.box4{
+    background-image: linear-gradient(180deg, #010101 0%, rgba(0, 0, 0, 0.51) 60%), url("../image3.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.classes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 400px;
+    gap: 100px;
+}
+.title{
+    width: 60%;
+}
+.title > h1{
+    font-size: 35px;
+    color: #424242;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.grid{
+    position: relative;
+    width: 100%;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.grid1{
+    background-image: linear-gradient(180.13deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.79) 80.77%), url("../image\ 1.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gridtext >h1{
+    font-size: 35px;
+    color: white;
+}
+.gridtext{
+    position: absolute;
+    bottom: 30px ;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+.grid2{
+    background-image: linear-gradient(180.13deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.79) 80.77%), url("../image 2.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid3{
+    background-image: linear-gradient(180.13deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.79) 80.77%), url("../image 3.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid4{
+    background-image: linear-gradient(180.13deg, rgba(217, 217, 217, 0) 0%, rgba(0, 0, 0, 0.79) 80.77%), url("../image 4.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.below > button{
+    padding: 20px;
+    background-color: #C90000;
+    font-size: 20px;
+    color: white;
+    border: none;
+
+}
+footer{
+    width: 100%;
+    background-color: #0E0E0E;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding: 100px 0;
+    gap: 150px;
+    margin-top: 200px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 30px;
+    color: white;
+}
+.contact >h1{
+    color: #C90000;
+    font-size: 35px;
+}
+
+.contact > ul >li {
+    margin-bottom: 20px;
+    font-size: 25px;
+
+}
+.sociallink{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+.morning, .afternoon{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
